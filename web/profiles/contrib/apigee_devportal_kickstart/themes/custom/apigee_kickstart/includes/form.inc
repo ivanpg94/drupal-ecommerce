@@ -60,7 +60,7 @@ function apigee_kickstart_form_commerce_checkout_flow_multistep_default_alter(ar
         $product = $purchased_entity->getProduct();
 
         // If an add credit product was checkout, add a link to the balance page.
-      /*  if ($product->get(AddCreditConfig::ADD_CREDIT_ENABLED_FIELD_NAME)->value) {
+        if ($product->get(AddCreditConfig::ADD_CREDIT_ENABLED_FIELD_NAME)->value) {
           $form['go_to_balance'] = Link::createFromRoute(t('Go to Balance'), 'apigee_monetization.my_billing', [], [
             'attributes' => [
               'class' => [
@@ -70,7 +70,7 @@ function apigee_kickstart_form_commerce_checkout_flow_multistep_default_alter(ar
               ],
             ],
           ])->toRenderable();
-        }*/
+        }
       }
       break;
   }
