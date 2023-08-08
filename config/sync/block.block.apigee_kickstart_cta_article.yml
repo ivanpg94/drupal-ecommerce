@@ -1,0 +1,4 @@
+langcode: es
+visibility:
+  node_type:
+    id: 'entity_bundle:node'

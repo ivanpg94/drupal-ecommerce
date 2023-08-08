@@ -1,4 +1,4 @@
-name: kickstart95
+name: drupal-ecommerce
 type: drupal10
 docroot: web
 php_version: "8.1"
