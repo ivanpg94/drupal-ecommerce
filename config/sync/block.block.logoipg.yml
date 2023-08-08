@@ -1,0 +1,25 @@
+uuid: 591b5945-b17c-42f9-8dba-2bbf9d445cc0
+langcode: es
+status: true
+dependencies:
+  content:
+    - 'block_content:basic:947f1bfd-5bfd-4378-a7b2-2a79e71c778d'
+  module:
+    - block_content
+  theme:
+    - subtheme
+id: logoipg
+theme: subtheme
+region: footer
+weight: -14
+provider: null
+plugin: 'block_content:947f1bfd-5bfd-4378-a7b2-2a79e71c778d'
+settings:
+  id: 'block_content:947f1bfd-5bfd-4378-a7b2-2a79e71c778d'
+  label: 'Logo IPG'
+  label_display: '0'
+  provider: block_content
+  status: true
+  info: ''
+  view_mode: full
+visibility: {  }

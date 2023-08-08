@@ -1,0 +1,105 @@
+uuid: 784bcf70-b4e4-4d4e-b5ce-9ba9a22c8baf
+langcode: es
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.default
+    - field.field.commerce_product_variation.default.field_categoria_producto
+    - field.field.commerce_product_variation.default.field_dimensiones
+    - field.field.commerce_product_variation.default.field_peso
+    - field.field.commerce_product_variation.default.field_product_image
+    - field.field.commerce_product_variation.default.field_product_image_extra
+    - field.field.commerce_product_variation.default.field_stock
+    - image.style.thumbnail
+  module:
+    - commerce_price
+    - commerce_stock_field
+    - image
+    - physical
+_core:
+  default_config_hash: dDLA40Axom_QFA79EWUpe_bWXWE8I_7MijzPkslbVfA
+id: commerce_product_variation.default.default
+targetEntityType: commerce_product_variation
+bundle: default
+mode: default
+content:
+  field_categoria_producto:
+    type: entity_reference_autocomplete
+    weight: 6
+    region: content
+    settings:
+      match_operator: CONTAINS
+      match_limit: 10
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  field_dimensiones:
+    type: physical_dimensions_default
+    weight: 9
+    region: content
+    settings:
+      default_unit: ''
+      allow_unit_change: true
+      available_units: {  }
+    third_party_settings: {  }
+  field_peso:
+    type: physical_measurement_default
+    weight: 8
+    region: content
+    settings:
+      default_unit: ''
+      allow_unit_change: true
+      available_units: {  }
+    third_party_settings: {  }
+  field_product_image:
+    type: image_image
+    weight: 2
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_product_image_extra:
+    type: image_image
+    weight: 3
+    region: content
+    settings:
+      progress_indicator: throbber
+      preview_image_style: thumbnail
+    third_party_settings: {  }
+  field_stock:
+    type: commerce_stock_level_simple_transaction
+    weight: 7
+    region: content
+    settings:
+      step: '1'
+      custom_transaction_note: true
+      default_transaction_note: 'Transaction issued by stock level field.'
+    third_party_settings: {  }
+  price:
+    type: commerce_price_default
+    weight: 5
+    region: content
+    settings: {  }
+    third_party_settings: {  }
+  sku:
+    type: string_textfield
+    weight: 4
+    region: content
+    settings:
+      size: 60
+      placeholder: ''
+    third_party_settings: {  }
+  status:
+    type: boolean_checkbox
+    weight: 10
+    region: content
+    settings:
+      display_label: true
+    third_party_settings: {  }
+hidden:
+  commerce_stock_always_in_stock: true
+  created: true
+  langcode: true
+  list_price: true
+  uid: true

@@ -1,0 +1,29 @@
+uuid: 924b543d-1948-4f4a-a452-7e6df1f9dc60
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.anuncios
+  module:
+    - system
+    - views
+  theme:
+    - subtheme
+id: views_block__anuncios_block_1
+theme: subtheme
+region: content
+weight: -7
+provider: null
+plugin: 'views_block:anuncios-block_1'
+settings:
+  id: 'views_block:anuncios-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

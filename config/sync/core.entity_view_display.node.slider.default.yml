@@ -1,0 +1,33 @@
+uuid: 405a0105-7562-4dfe-8aee-d98fc406af1b
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.slider.field_carousel_image
+    - node.type.slider
+  module:
+    - image
+    - user
+id: node.slider.default
+targetEntityType: node
+bundle: slider
+mode: default
+content:
+  field_carousel_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  langcode: true

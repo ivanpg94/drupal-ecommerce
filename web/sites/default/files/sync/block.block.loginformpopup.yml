@@ -1,0 +1,29 @@
+uuid: 53973ea7-f0ed-4652-a3fa-004c9cb16ee8
+langcode: es
+status: true
+dependencies:
+  module:
+    - login_popup
+    - user
+  theme:
+    - subtheme
+id: loginformpopup
+theme: subtheme
+region: navbar_right
+weight: -5
+provider: null
+plugin: login_form_popup
+settings:
+  id: login_form_popup
+  label: Login
+  label_display: '0'
+  provider: login_popup
+  show_logout_link: 0
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous

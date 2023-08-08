@@ -1,0 +1,27 @@
+uuid: 17fcca49-39e0-410c-ac5e-f6e9f7091204
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - media_library
+_core:
+  default_config_hash: 7qJqToD1OQLAyeswpmg7M0LRxQlw1URQkJDWUJCnmR8
+name: media_library
+label: 'Miniatura de Media Library (220×220)'
+effects:
+  75b076a8-1234-4b42-85db-bf377c4d8d5f:
+    uuid: 75b076a8-1234-4b42-85db-bf377c4d8d5f
+    id: image_scale
+    weight: 0
+    data:
+      width: 220
+      height: 220
+      upscale: false
+  38b635d1-1b9e-4504-a05a-a4513b491129:
+    uuid: 38b635d1-1b9e-4504-a05a-a4513b491129
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
+pipeline: webp

@@ -1,0 +1,10 @@
+@import 'color';
+
+.article--teaser {
+  .article__title {
+    a {
+      color: $color_primario;
+    }
+  }
+}
+

@@ -1,0 +1,38 @@
+@import 'color';
+.block--formularioexpuestoproductos-search-apipage-1{
+  width: 30%;
+}
+#views-exposed-form-productos-search-api-page-1{
+  .form-control{
+    background-color: $color_secundario;
+  }
+  background-color: $color_fondo;
+  div{
+    width: 45%;
+    float: left;
+    margin-right: $margin;
+    input{
+      color: $color_primario;
+      border: 1px solid $color_fondo;
+      height: 2.4rem;
+      text-transform: none;
+    }
+    input:focus{
+      border-color: $color_fondo;
+      box-shadow: 0 0 0 0.01rem $color_fondo;    }
+    label{
+      display: none;
+    }
+  }
+  div:nth-child(2){
+    width: 30%;
+    input{
+      padding: 0;
+      border-radius: 0.2rem;
+      border: 1px solid $color_fondo;
+      position: relative;
+      margin: 0 auto;
+      text-align: center;
+    }
+  }
+}

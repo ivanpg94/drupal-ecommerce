@@ -1,0 +1,51 @@
+uuid: c1ca5476-5c51-4eba-a4df-ddb63a148038
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.node.anuncio.field_imagen_anuncio
+    - field.field.node.anuncio.field_link_anuncio
+    - node.type.anuncio
+  module:
+    - image
+    - link
+    - user
+id: node.anuncio.default
+targetEntityType: node
+bundle: anuncio
+mode: default
+content:
+  field_imagen_anuncio:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 101
+    region: content
+  field_link_anuncio:
+    type: link
+    label: above
+    settings:
+      trim_length: 80
+      url_only: false
+      url_plain: false
+      rel: ''
+      target: ''
+    third_party_settings: {  }
+    weight: 102
+    region: content
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true
+  search_api_excerpt: true

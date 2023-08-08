@@ -1,0 +1,21 @@
+uuid: 18a5c2a4-8b0a-4e6c-a347-f41c25c6e9a0
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_title
+    - paragraphs.paragraphs_type.text_image
+_core:
+  default_config_hash: HiP6IUaut17w0F1XIG3QK1E_8Hxia4bYT1W_DBew-M8
+id: paragraph.text_image.field_title
+field_name: field_title
+entity_type: paragraph
+bundle: text_image
+label: Título
+description: ''
+required: false
+translatable: true
+default_value: {  }
+default_value_callback: ''
+settings: {  }
+field_type: string

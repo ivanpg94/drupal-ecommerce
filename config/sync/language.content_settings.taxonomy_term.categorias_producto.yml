@@ -1,0 +1,11 @@
+uuid: cd0e58eb-23fd-4b93-ad0f-6d50b40f245d
+langcode: es
+status: true
+dependencies:
+  config:
+    - taxonomy.vocabulary.categorias_producto
+id: taxonomy_term.categorias_producto
+target_entity_type_id: taxonomy_term
+target_bundle: categorias_producto
+default_langcode: site_default
+language_alterable: false

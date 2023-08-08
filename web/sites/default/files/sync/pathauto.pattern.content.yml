@@ -1,0 +1,26 @@
+uuid: 662c0ffa-23df-41e2-abca-19e840cf1df1
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: pzYvLAJ1o8vu7X1TJ0B3bJaAaWKPd22rirOMGU6iwhs
+id: content
+label: Contenido
+type: 'canonical_entities:node'
+pattern: '[node:content-type:machine-name]/[node:title]'
+selection_criteria:
+  161f7501-3436-4229-8956-d7f46a334444:
+    id: node_type
+    negate: false
+    uuid: 161f7501-3436-4229-8956-d7f46a334444
+    context_mapping:
+      node: node
+    bundles:
+      article: article
+      faq: faq
+      forum: forum
+selection_logic: and
+weight: -5
+relationships: {  }

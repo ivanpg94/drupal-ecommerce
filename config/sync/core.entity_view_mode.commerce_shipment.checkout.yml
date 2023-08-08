@@ -1,0 +1,12 @@
+uuid: bffd94f8-f1b3-44da-b83c-2c36917ce868
+langcode: es
+status: true
+dependencies:
+  module:
+    - commerce_shipping
+_core:
+  default_config_hash: SOM4LMI0fFeahHJLPEPoVldiWGePCGwhTERi0cTjb0U
+id: commerce_shipment.checkout
+label: 'Tramitar compra'
+targetEntityType: commerce_shipment
+cache: true

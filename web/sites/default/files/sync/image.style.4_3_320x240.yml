@@ -1,0 +1,16 @@
+uuid: c41a4a5e-be6e-4a8c-8ee6-b20601bde455
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: UmD039jtxkeQOW-mJ8yGsYN82ObYsD7bBpaKT3cV_S4
+name: 4_3_320x240
+label: '4:3 Ratio - Max 320 x 240'
+effects:
+  bc864927-0f77-4c0d-906c-66cf2c99d7f6:
+    uuid: bc864927-0f77-4c0d-906c-66cf2c99d7f6
+    id: image_convert
+    weight: 1
+    data:
+      extension: webp
+pipeline: webp

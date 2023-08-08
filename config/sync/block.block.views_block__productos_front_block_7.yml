@@ -1,0 +1,29 @@
+uuid: 035f13d9-3a8f-4fe6-8c87-1e6680877b7a
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.productos_front
+  module:
+    - system
+    - views
+  theme:
+    - subtheme
+id: views_block__productos_front_block_7
+theme: subtheme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:productos_front-block_7'
+settings:
+  id: 'views_block:productos_front-block_7'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /genero

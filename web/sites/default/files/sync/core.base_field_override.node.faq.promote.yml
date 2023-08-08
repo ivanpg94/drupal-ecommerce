@@ -1,0 +1,24 @@
+uuid: 52145036-36ef-4e87-9a2e-88a21d683d58
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.faq
+_core:
+  default_config_hash: SG2yMznfWW0WT_tzHsHqnkKcr2KEAufFB3sFG9jwt5A
+id: node.faq.promote
+field_name: promote
+entity_type: node
+bundle: faq
+label: 'Promocionado a la página principal'
+description: ''
+required: false
+translatable: true
+default_value:
+  -
+    value: 0
+default_value_callback: ''
+settings:
+  on_label: Activado
+  off_label: Desactivado
+field_type: boolean

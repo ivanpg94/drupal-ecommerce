@@ -1,0 +1,16 @@
+uuid: 6f4cf52f-7106-4439-90ae-1ac34c7fb11f
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: LsqMeW7kiFsiIKZm8DEG0zvMLaBUQFCnh1vAjibtndc
+id: file
+label: Archivo
+description: 'Utilice ficheros locales para elementos multimedia reutilizables.'
+source: file
+queue_thumbnail_downloads: false
+new_revision: true
+source_configuration:
+  source_field: field_media_file
+field_map:
+  name: name

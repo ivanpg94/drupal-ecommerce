@@ -1,0 +1,2387 @@
+uuid: 30d7f728-1490-4fd2-b15d-051b4e456064
+langcode: es
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_type.default
+    - field.storage.commerce_product_variation.field_product_image
+    - image.style.medium
+    - taxonomy.vocabulary.categorias_producto
+  content:
+    - 'taxonomy_term:categorias_producto:0f618469-cac5-4ee5-9ee1-ff9eed97e00d'
+    - 'taxonomy_term:categorias_producto:18f764e4-eaff-48f1-8212-d9c13940b669'
+    - 'taxonomy_term:categorias_producto:1996e4f0-1f96-4d46-a6d9-2a9d489aad0d'
+    - 'taxonomy_term:categorias_producto:1e2a68ae-890e-4fe0-b317-1238dc751f73'
+    - 'taxonomy_term:categorias_producto:24f0183e-1c5f-44b5-8041-1470ea5cc9e5'
+    - 'taxonomy_term:categorias_producto:266fb117-b702-48d1-b8b7-fa7be791d16a'
+    - 'taxonomy_term:categorias_producto:2a24ae66-83b2-4f0f-97c4-be98ab8ec8ed'
+    - 'taxonomy_term:categorias_producto:2ac7d2d0-6a53-4e91-af90-c0ff83c67851'
+    - 'taxonomy_term:categorias_producto:37cbb6b3-160f-47d1-a582-41ec200ef9d6'
+    - 'taxonomy_term:categorias_producto:3f696641-a36e-4814-9e38-1f29a997014d'
+    - 'taxonomy_term:categorias_producto:4fb4ee88-3d12-4604-9c18-2ac4a14e2641'
+    - 'taxonomy_term:categorias_producto:5e762553-80fc-4fe7-835b-cd443ce1e708'
+    - 'taxonomy_term:categorias_producto:63921850-78c0-42e7-9296-73e8e42dbadb'
+    - 'taxonomy_term:categorias_producto:72505207-090a-401d-a023-408bd889bc3a'
+    - 'taxonomy_term:categorias_producto:753529ba-776b-48e9-adfe-4c5c66da7797'
+    - 'taxonomy_term:categorias_producto:79d44e46-7c3b-402c-89d7-b8afbe506325'
+    - 'taxonomy_term:categorias_producto:7b51359c-2301-49b5-b897-09e8e84ffa56'
+    - 'taxonomy_term:categorias_producto:7c81752a-63b2-4ba8-9690-8028e431395e'
+    - 'taxonomy_term:categorias_producto:7fed5272-949e-4092-983f-fbbeca9de963'
+    - 'taxonomy_term:categorias_producto:84f4a790-a758-4bbd-b8d7-dd37c6dc0b4e'
+    - 'taxonomy_term:categorias_producto:8606db22-5e8e-4964-95e9-df6fc75c5897'
+    - 'taxonomy_term:categorias_producto:8a4d4560-e226-4f38-a2db-c36406409bc7'
+    - 'taxonomy_term:categorias_producto:8c691abc-cbea-4420-97e2-16fd8740c0cd'
+    - 'taxonomy_term:categorias_producto:8f541988-cdc6-4ada-980a-fd753f4ed48a'
+    - 'taxonomy_term:categorias_producto:8f62c972-71f4-4012-924b-22f675b0984e'
+    - 'taxonomy_term:categorias_producto:995eaaf6-f401-478a-9096-641e1dede909'
+    - 'taxonomy_term:categorias_producto:a1006b72-ba30-4f81-9932-1fe9579d00c9'
+    - 'taxonomy_term:categorias_producto:a27fad7d-f8ed-4acc-8f88-06e4ca5f7273'
+    - 'taxonomy_term:categorias_producto:a97df871-894b-4a75-be7a-594a6b00943b'
+    - 'taxonomy_term:categorias_producto:aebabfc1-f340-4172-81dd-40bd4009761a'
+    - 'taxonomy_term:categorias_producto:afb97319-b120-49cf-b99e-80dac7c917c9'
+    - 'taxonomy_term:categorias_producto:b4ec8bde-2893-40f4-8825-ee53b20f5bbd'
+    - 'taxonomy_term:categorias_producto:b5ac8736-47f6-4f0c-96d3-1f32cc636758'
+    - 'taxonomy_term:categorias_producto:c07805a3-76af-4a61-b976-89f043d02b4a'
+    - 'taxonomy_term:categorias_producto:c76b94a0-ec40-4b89-bda7-f5decc25d92d'
+    - 'taxonomy_term:categorias_producto:cab24f4b-ee8c-425a-aaef-e54af5fc9600'
+    - 'taxonomy_term:categorias_producto:d2ccf006-77b4-4b6b-ae49-763f485724d2'
+    - 'taxonomy_term:categorias_producto:d3c86b11-4ed6-48e2-b17d-36d83b959c93'
+    - 'taxonomy_term:categorias_producto:d647cf5f-c26b-44fa-8145-2b5ed92f9b16'
+    - 'taxonomy_term:categorias_producto:ddf72c55-9350-4062-9706-1eed017cdb44'
+    - 'taxonomy_term:categorias_producto:e54ec04e-86a8-4ca3-b142-a42f50418642'
+    - 'taxonomy_term:categorias_producto:e7dff373-f413-4f12-8d6c-ed607331d4e9'
+    - 'taxonomy_term:categorias_producto:e9909d45-ebe1-4339-b0a6-8e0535fd8714'
+    - 'taxonomy_term:categorias_producto:ee0f9b22-3bbe-4bb0-a501-953563a36ad8'
+  module:
+    - commerce
+    - commerce_price
+    - commerce_product
+    - image
+    - taxonomy
+id: productos_front
+label: 'Productos Front'
+module: views
+description: ''
+tag: ''
+base_table: commerce_product_field_data
+base_field: product_id
+display:
+  default:
+    id: default
+    display_title: Default
+    display_plugin: default
+    position: 0
+    display_options:
+      title: Novedades
+      fields:
+        field_product_image:
+          id: field_product_image
+          table: commerce_product_variation__field_product_image
+          field: field_product_image
+          relationship: variations_target_id
+          group_type: group
+          admin_label: ''
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: image
+          settings:
+            image_link: content
+            image_style: medium
+            image_loading:
+              attribute: lazy
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        title:
+          id: title
+          table: commerce_product_field_data
+          field: title
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: commerce_product
+          entity_field: title
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: value
+          type: string
+          settings:
+            link_to_entity: false
+          group_column: value
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        price__number:
+          id: price__number
+          table: commerce_product_variation_field_data
+          field: price__number
+          relationship: variations_target_id
+          group_type: group
+          admin_label: ''
+          entity_type: commerce_product_variation
+          entity_field: price
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: number
+          type: commerce_price_default
+          settings:
+            strip_trailing_zeroes: false
+            currency_display: symbol
+          group_column: ''
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+        variations_target_id:
+          id: variations_target_id
+          table: commerce_product__variations
+          field: variations_target_id
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: commerce_product
+          entity_field: variations
+          plugin_id: field
+          label: ''
+          exclude: false
+          alter:
+            alter_text: false
+            text: ''
+            make_link: false
+            path: ''
+            absolute: false
+            external: false
+            replace_spaces: false
+            path_case: none
+            trim_whitespace: false
+            alt: ''
+            rel: ''
+            link_class: ''
+            prefix: ''
+            suffix: ''
+            target: ''
+            nl2br: false
+            max_length: 0
+            word_boundary: true
+            ellipsis: true
+            more_link: false
+            more_link_text: ''
+            more_link_path: ''
+            strip_tags: false
+            trim: false
+            preserve_tags: ''
+            html: false
+          element_type: ''
+          element_class: ''
+          element_label_type: ''
+          element_label_class: ''
+          element_label_colon: false
+          element_wrapper_type: ''
+          element_wrapper_class: ''
+          element_default_classes: true
+          empty: ''
+          hide_empty: false
+          empty_zero: false
+          hide_alter_empty: true
+          click_sort_column: target_id
+          type: commerce_add_to_cart
+          settings:
+            combine: false
+          group_column: target_id
+          group_columns: {  }
+          group_rows: true
+          delta_limit: 0
+          delta_offset: 0
+          delta_reversed: false
+          delta_first_last: false
+          multi_type: separator
+          separator: ', '
+          field_api_classes: false
+      pager:
+        type: mini
+        options:
+          offset: 0
+          items_per_page: 16
+          total_pages: null
+          id: 0
+          tags:
+            next: ››
+            previous: ‹‹
+          expose:
+            items_per_page: false
+            items_per_page_label: 'Elementos por página'
+            items_per_page_options: '5, 10, 25, 50'
+            items_per_page_options_all: false
+            items_per_page_options_all_label: '- Todo -'
+            offset: false
+            offset_label: Desplazamiento
+      exposed_form:
+        type: basic
+        options:
+          submit_button: Aplicar
+          reset_button: false
+          reset_button_label: Restablecer
+          exposed_sorts_label: 'Ordenar por'
+          expose_sort_order: true
+          sort_asc_label: Asc
+          sort_desc_label: Desc
+      access:
+        type: none
+        options: {  }
+      cache:
+        type: tag
+        options: {  }
+      empty: {  }
+      sorts:
+        created:
+          id: created
+          table: commerce_product_field_data
+          field: created
+          relationship: none
+          group_type: group
+          admin_label: ''
+          entity_type: commerce_product
+          entity_field: created
+          plugin_id: date
+          order: DESC
+          expose:
+            label: ''
+            field_identifier: ''
+          exposed: false
+          granularity: second
+      arguments: {  }
+      filters:
+        status:
+          id: status
+          table: commerce_product_field_data
+          field: status
+          entity_type: commerce_product
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: commerce_product_field_data
+          field: type
+          entity_type: commerce_product
+          entity_field: type
+          plugin_id: commerce_entity_bundle
+          value:
+            default: default
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_categoria_producto_target_id:
+          id: field_categoria_producto_target_id
+          table: commerce_product_variation__field_categoria_producto
+          field: field_categoria_producto_target_id
+          relationship: variations_target_id
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            28: 28
+            23: 23
+            11: 11
+            35: 35
+            18: 18
+            19: 19
+            42: 42
+            38: 38
+            32: 32
+            27: 27
+            34: 34
+            14: 14
+            39: 39
+            43: 43
+            22: 22
+            36: 36
+            25: 25
+            15: 15
+            40: 40
+            31: 31
+            4: 4
+            24: 24
+            37: 37
+            20: 20
+            13: 13
+            30: 30
+            44: 44
+            16: 16
+            33: 33
+            21: 21
+            41: 41
+            26: 26
+            29: 29
+            5: 5
+            17: 17
+            12: 12
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_categoria_producto_target_id_op
+            label: 'Categoria de producto'
+            description: ''
+            use_operator: false
+            operator: field_categoria_producto_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_categoria_producto_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: categorias_producto
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      style:
+        type: grid
+        options:
+          grouping: {  }
+          columns: 6
+          automatic_width: true
+          alignment: horizontal
+          row_class_custom: ''
+          row_class_default: true
+          col_class_custom: ''
+          col_class_default: true
+      row:
+        type: fields
+      query:
+        type: views_query
+        options:
+          query_comment: ''
+          disable_sql_rewrite: false
+          distinct: false
+          replica: false
+          query_tags: {  }
+      relationships:
+        variations_target_id:
+          id: variations_target_id
+          table: commerce_product__variations
+          field: variations_target_id
+          relationship: none
+          group_type: group
+          admin_label: 'Variación de producto'
+          entity_type: commerce_product
+          entity_field: variations
+          plugin_id: standard
+          required: false
+      use_ajax: true
+      header: {  }
+      footer: {  }
+      display_extenders: {  }
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+      tags:
+        - 'config:field.storage.commerce_product_variation.field_product_image'
+  block_1:
+    id: block_1
+    display_title: novedades
+    display_plugin: block
+    position: 2
+    display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 12
+      filters:
+        status:
+          id: status
+          table: commerce_product_field_data
+          field: status
+          entity_type: commerce_product
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: commerce_product_field_data
+          field: type
+          entity_type: commerce_product
+          entity_field: type
+          plugin_id: commerce_entity_bundle
+          value:
+            default: default
+          group: 1
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        pager: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+      tags:
+        - 'config:field.storage.commerce_product_variation.field_product_image'
+  block_10:
+    id: block_10
+    display_title: Otros
+    display_plugin: block
+    position: 2
+    display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 0
+      filters:
+        status:
+          id: status
+          table: commerce_product_field_data
+          field: status
+          entity_type: commerce_product
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: commerce_product_field_data
+          field: type
+          entity_type: commerce_product
+          entity_field: type
+          plugin_id: commerce_entity_bundle
+          value:
+            default: default
+          group: 1
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_categoria_producto_target_id:
+          id: field_categoria_producto_target_id
+          table: commerce_product_variation__field_categoria_producto
+          field: field_categoria_producto_target_id
+          relationship: variations_target_id
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            45: 45
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_categoria_producto_target_id_op
+            label: Otros
+            description: ''
+            use_operator: false
+            operator: field_categoria_producto_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_categoria_producto_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: categorias_producto
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_categoria_producto_target_id_1:
+          id: field_categoria_producto_target_id_1
+          table: commerce_product_variation__field_categoria_producto
+          field: field_categoria_producto_target_id
+          relationship: variations_target_id
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            45: 45
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: categorias_producto
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        pager: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+      tags:
+        - 'config:field.storage.commerce_product_variation.field_product_image'
+  block_11:
+    id: block_11
+    display_title: 'Rango de Precio'
+    display_plugin: block
+    position: 2
+    display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 0
+      filters:
+        status:
+          id: status
+          table: commerce_product_field_data
+          field: status
+          entity_type: commerce_product
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: commerce_product_field_data
+          field: type
+          entity_type: commerce_product
+          entity_field: type
+          plugin_id: commerce_entity_bundle
+          value:
+            default: default
+          group: 1
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_categoria_producto_target_id:
+          id: field_categoria_producto_target_id
+          table: commerce_product_variation__field_categoria_producto
+          field: field_categoria_producto_target_id
+          relationship: variations_target_id
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            35: 35
+            36: 36
+            37: 37
+            9: 9
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_categoria_producto_target_id_op
+            label: 'Rango de Precio'
+            description: ''
+            use_operator: false
+            operator: field_categoria_producto_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_categoria_producto_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: categorias_producto
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_categoria_producto_target_id_1:
+          id: field_categoria_producto_target_id_1
+          table: commerce_product_variation__field_categoria_producto
+          field: field_categoria_producto_target_id
+          relationship: variations_target_id
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            35: 35
+            36: 36
+            37: 37
+            9: 9
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: categorias_producto
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        pager: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+      tags:
+        - 'config:field.storage.commerce_product_variation.field_product_image'
+  block_12:
+    id: block_12
+    display_title: Otros
+    display_plugin: block
+    position: 2
+    display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 0
+      filters:
+        status:
+          id: status
+          table: commerce_product_field_data
+          field: status
+          entity_type: commerce_product
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: commerce_product_field_data
+          field: type
+          entity_type: commerce_product
+          entity_field: type
+          plugin_id: commerce_entity_bundle
+          value:
+            default: default
+          group: 1
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_categoria_producto_target_id:
+          id: field_categoria_producto_target_id
+          table: commerce_product_variation__field_categoria_producto
+          field: field_categoria_producto_target_id
+          relationship: variations_target_id
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            45: 45
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_categoria_producto_target_id_op
+            label: Otros
+            description: ''
+            use_operator: false
+            operator: field_categoria_producto_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_categoria_producto_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: categorias_producto
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_categoria_producto_target_id_1:
+          id: field_categoria_producto_target_id_1
+          table: commerce_product_variation__field_categoria_producto
+          field: field_categoria_producto_target_id
+          relationship: variations_target_id
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            45: 45
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: categorias_producto
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        pager: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+      tags:
+        - 'config:field.storage.commerce_product_variation.field_product_image'
+  block_2:
+    id: block_2
+    display_title: marca
+    display_plugin: block
+    position: 2
+    display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 0
+      filters:
+        status:
+          id: status
+          table: commerce_product_field_data
+          field: status
+          entity_type: commerce_product
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: commerce_product_field_data
+          field: type
+          entity_type: commerce_product
+          entity_field: type
+          plugin_id: commerce_entity_bundle
+          value:
+            default: default
+          group: 1
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_categoria_producto_target_id:
+          id: field_categoria_producto_target_id
+          table: commerce_product_variation__field_categoria_producto
+          field: field_categoria_producto_target_id
+          relationship: variations_target_id
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            11: 11
+            14: 14
+            13: 13
+            12: 12
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_categoria_producto_target_id_op
+            label: Funcionalidad
+            description: ''
+            use_operator: false
+            operator: field_categoria_producto_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_categoria_producto_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: categorias_producto
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_categoria_producto_target_id_1:
+          id: field_categoria_producto_target_id_1
+          table: commerce_product_variation__field_categoria_producto
+          field: field_categoria_producto_target_id
+          relationship: variations_target_id
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            11: 11
+            14: 14
+            13: 13
+            12: 12
+            2: 2
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: categorias_producto
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        pager: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+      tags:
+        - 'config:field.storage.commerce_product_variation.field_product_image'
+  block_3:
+    id: block_3
+    display_title: 'Sistema Operativo'
+    display_plugin: block
+    position: 2
+    display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 0
+      filters:
+        status:
+          id: status
+          table: commerce_product_field_data
+          field: status
+          entity_type: commerce_product
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: commerce_product_field_data
+          field: type
+          entity_type: commerce_product
+          entity_field: type
+          plugin_id: commerce_entity_bundle
+          value:
+            default: default
+          group: 1
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_categoria_producto_target_id:
+          id: field_categoria_producto_target_id
+          table: commerce_product_variation__field_categoria_producto
+          field: field_categoria_producto_target_id
+          relationship: variations_target_id
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            18: 18
+            15: 15
+            16: 16
+            17: 17
+            3: 3
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_categoria_producto_target_id_op
+            label: 'Sistema Operativo'
+            description: ''
+            use_operator: false
+            operator: field_categoria_producto_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_categoria_producto_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: categorias_producto
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_categoria_producto_target_id_1:
+          id: field_categoria_producto_target_id_1
+          table: commerce_product_variation__field_categoria_producto
+          field: field_categoria_producto_target_id
+          relationship: variations_target_id
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            18: 18
+            15: 15
+            16: 16
+            17: 17
+            3: 3
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: categorias_producto
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        pager: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+      tags:
+        - 'config:field.storage.commerce_product_variation.field_product_image'
+  block_4:
+    id: block_4
+    display_title: Funcionalidad
+    display_plugin: block
+    position: 2
+    display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 0
+      filters:
+        status:
+          id: status
+          table: commerce_product_field_data
+          field: status
+          entity_type: commerce_product
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: commerce_product_field_data
+          field: type
+          entity_type: commerce_product
+          entity_field: type
+          plugin_id: commerce_entity_bundle
+          value:
+            default: default
+          group: 1
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_categoria_producto_target_id:
+          id: field_categoria_producto_target_id
+          table: commerce_product_variation__field_categoria_producto
+          field: field_categoria_producto_target_id
+          relationship: variations_target_id
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            19: 19
+            22: 22
+            20: 20
+            21: 21
+            4: 4
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_categoria_producto_target_id_op
+            label: 'Categoría marca'
+            description: ''
+            use_operator: false
+            operator: field_categoria_producto_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_categoria_producto_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: categorias_producto
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_categoria_producto_target_id_1:
+          id: field_categoria_producto_target_id_1
+          table: commerce_product_variation__field_categoria_producto
+          field: field_categoria_producto_target_id
+          relationship: variations_target_id
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            19: 19
+            22: 22
+            20: 20
+            21: 21
+            4: 4
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: categorias_producto
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        pager: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+      tags:
+        - 'config:field.storage.commerce_product_variation.field_product_image'
+  block_5:
+    id: block_5
+    display_title: 'Tipo de Pantalla'
+    display_plugin: block
+    position: 2
+    display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 0
+      filters:
+        status:
+          id: status
+          table: commerce_product_field_data
+          field: status
+          entity_type: commerce_product
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: commerce_product_field_data
+          field: type
+          entity_type: commerce_product
+          entity_field: type
+          plugin_id: commerce_entity_bundle
+          value:
+            default: default
+          group: 1
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_categoria_producto_target_id:
+          id: field_categoria_producto_target_id
+          table: commerce_product_variation__field_categoria_producto
+          field: field_categoria_producto_target_id
+          relationship: variations_target_id
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            23: 23
+            25: 25
+            24: 24
+            26: 26
+            5: 5
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_categoria_producto_target_id_op
+            label: 'Tipo de Pantalla'
+            description: ''
+            use_operator: false
+            operator: field_categoria_producto_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_categoria_producto_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: categorias_producto
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_categoria_producto_target_id_1:
+          id: field_categoria_producto_target_id_1
+          table: commerce_product_variation__field_categoria_producto
+          field: field_categoria_producto_target_id
+          relationship: variations_target_id
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            23: 23
+            25: 25
+            24: 24
+            26: 26
+            5: 5
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: categorias_producto
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        pager: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+      tags:
+        - 'config:field.storage.commerce_product_variation.field_product_image'
+  block_6:
+    id: block_6
+    display_title: Material
+    display_plugin: block
+    position: 2
+    display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 0
+      filters:
+        status:
+          id: status
+          table: commerce_product_field_data
+          field: status
+          entity_type: commerce_product
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: commerce_product_field_data
+          field: type
+          entity_type: commerce_product
+          entity_field: type
+          plugin_id: commerce_entity_bundle
+          value:
+            default: default
+          group: 1
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_categoria_producto_target_id:
+          id: field_categoria_producto_target_id
+          table: commerce_product_variation__field_categoria_producto
+          field: field_categoria_producto_target_id
+          relationship: variations_target_id
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            28: 28
+            27: 27
+            30: 30
+            29: 29
+            6: 6
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_categoria_producto_target_id_op
+            label: Material
+            description: ''
+            use_operator: false
+            operator: field_categoria_producto_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_categoria_producto_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: categorias_producto
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_categoria_producto_target_id_1:
+          id: field_categoria_producto_target_id_1
+          table: commerce_product_variation__field_categoria_producto
+          field: field_categoria_producto_target_id
+          relationship: variations_target_id
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            28: 28
+            27: 27
+            30: 30
+            29: 29
+            6: 6
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: categorias_producto
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        pager: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+      tags:
+        - 'config:field.storage.commerce_product_variation.field_product_image'
+  block_7:
+    id: block_7
+    display_title: Género
+    display_plugin: block
+    position: 2
+    display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 0
+      filters:
+        status:
+          id: status
+          table: commerce_product_field_data
+          field: status
+          entity_type: commerce_product
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: commerce_product_field_data
+          field: type
+          entity_type: commerce_product
+          entity_field: type
+          plugin_id: commerce_entity_bundle
+          value:
+            default: default
+          group: 1
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_categoria_producto_target_id:
+          id: field_categoria_producto_target_id
+          table: commerce_product_variation__field_categoria_producto
+          field: field_categoria_producto_target_id
+          relationship: variations_target_id
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            42: 42
+            43: 43
+            44: 44
+            7: 7
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_categoria_producto_target_id_op
+            label: Género
+            description: ''
+            use_operator: false
+            operator: field_categoria_producto_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_categoria_producto_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: categorias_producto
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_categoria_producto_target_id_1:
+          id: field_categoria_producto_target_id_1
+          table: commerce_product_variation__field_categoria_producto
+          field: field_categoria_producto_target_id
+          relationship: variations_target_id
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            42: 42
+            43: 43
+            44: 44
+            7: 7
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: categorias_producto
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        pager: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+      tags:
+        - 'config:field.storage.commerce_product_variation.field_product_image'
+  block_8:
+    id: block_8
+    display_title: Edad
+    display_plugin: block
+    position: 2
+    display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 0
+      filters:
+        status:
+          id: status
+          table: commerce_product_field_data
+          field: status
+          entity_type: commerce_product
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: commerce_product_field_data
+          field: type
+          entity_type: commerce_product
+          entity_field: type
+          plugin_id: commerce_entity_bundle
+          value:
+            default: default
+          group: 1
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_categoria_producto_target_id:
+          id: field_categoria_producto_target_id
+          table: commerce_product_variation__field_categoria_producto
+          field: field_categoria_producto_target_id
+          relationship: variations_target_id
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            38: 38
+            39: 39
+            40: 40
+            41: 41
+            8: 8
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_categoria_producto_target_id_op
+            label: Edad
+            description: ''
+            use_operator: false
+            operator: field_categoria_producto_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_categoria_producto_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: categorias_producto
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_categoria_producto_target_id_1:
+          id: field_categoria_producto_target_id_1
+          table: commerce_product_variation__field_categoria_producto
+          field: field_categoria_producto_target_id
+          relationship: variations_target_id
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            38: 38
+            39: 39
+            40: 40
+            41: 41
+            8: 8
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: categorias_producto
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        pager: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+      tags:
+        - 'config:field.storage.commerce_product_variation.field_product_image'
+  block_9:
+    id: block_9
+    display_title: Accesorios
+    display_plugin: block
+    position: 2
+    display_options:
+      pager:
+        type: some
+        options:
+          offset: 0
+          items_per_page: 0
+      filters:
+        status:
+          id: status
+          table: commerce_product_field_data
+          field: status
+          entity_type: commerce_product
+          entity_field: status
+          plugin_id: boolean
+          value: '1'
+          group: 1
+          expose:
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+        type:
+          id: type
+          table: commerce_product_field_data
+          field: type
+          entity_type: commerce_product
+          entity_field: type
+          plugin_id: commerce_entity_bundle
+          value:
+            default: default
+          group: 1
+          expose:
+            operator_limit_selection: false
+            operator_list: {  }
+        field_categoria_producto_target_id:
+          id: field_categoria_producto_target_id
+          table: commerce_product_variation__field_categoria_producto
+          field: field_categoria_producto_target_id
+          relationship: variations_target_id
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            32: 32
+            34: 34
+            31: 31
+            33: 33
+            10: 10
+          group: 1
+          exposed: true
+          expose:
+            operator_id: field_categoria_producto_target_id_op
+            label: Accesorios
+            description: ''
+            use_operator: false
+            operator: field_categoria_producto_target_id_op
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: field_categoria_producto_target_id
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+              anonymous: '0'
+              administrator: '0'
+            reduce: true
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: categorias_producto
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+        field_categoria_producto_target_id_1:
+          id: field_categoria_producto_target_id_1
+          table: commerce_product_variation__field_categoria_producto
+          field: field_categoria_producto_target_id
+          relationship: variations_target_id
+          group_type: group
+          admin_label: ''
+          plugin_id: taxonomy_index_tid
+          operator: or
+          value:
+            32: 32
+            34: 34
+            31: 31
+            33: 33
+            10: 10
+          group: 1
+          exposed: false
+          expose:
+            operator_id: ''
+            label: ''
+            description: ''
+            use_operator: false
+            operator: ''
+            operator_limit_selection: false
+            operator_list: {  }
+            identifier: ''
+            required: false
+            remember: false
+            multiple: false
+            remember_roles:
+              authenticated: authenticated
+            reduce: false
+          is_grouped: false
+          group_info:
+            label: ''
+            description: ''
+            identifier: ''
+            optional: true
+            widget: select
+            multiple: false
+            remember: false
+            default_group: All
+            default_group_multiple: {  }
+            group_items: {  }
+          reduce_duplicates: true
+          vid: categorias_producto
+          type: select
+          hierarchy: false
+          limit: true
+          error_message: true
+      filter_groups:
+        operator: AND
+        groups:
+          1: AND
+      defaults:
+        pager: false
+        filters: false
+        filter_groups: false
+      display_description: ''
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - user
+      tags:
+        - 'config:field.storage.commerce_product_variation.field_product_image'
+  page_1:
+    id: page_1
+    display_title: Page
+    display_plugin: page
+    position: 1
+    display_options:
+      display_extenders:
+        metatag_display_extender:
+          metatags: {  }
+          tokenize: false
+      path: catalogo
+    cache_metadata:
+      max-age: -1
+      contexts:
+        - 'languages:language_content'
+        - 'languages:language_interface'
+        - url
+        - url.query_args
+        - user
+      tags:
+        - 'config:field.storage.commerce_product_variation.field_product_image'

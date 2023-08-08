@@ -1,0 +1,18 @@
+uuid: 9819229e-09d4-4871-8988-119b17433034
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - commerce_order
+_core:
+  default_config_hash: zyTJjisGAiNCmSVzU73UWGY2joBWA3QXvlcjDDIuWcs
+id: order_default
+label: 'Por defecto'
+targetEntityType: commerce_order
+plugin: yearly
+configuration:
+  pattern: '[pattern:year]-[pattern:number]'
+  initial_number: 1
+  padding: 5
+  per_store_sequence: true

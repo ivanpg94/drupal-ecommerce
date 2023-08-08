@@ -1,0 +1,161 @@
+{
+  "name": "apigee/devportal-kickstart-project",
+  "description": "Composer project template for the Apigee Developer Portal Drupal distribution.",
+  "type": "project",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://www.drupal.org/project/apigee_devportal_kickstart",
+  "support": {
+    "docs": "https://www.drupal.org/docs/8/modules/apigee-developer-portal-kickstart"
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://packages.drupal.org/8"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "furf/jquery-ui-touch-punch",
+        "version": "dev-master",
+        "type": "drupal-library",
+        "dist": {
+          "url": "https://github.com/furf/jquery-ui-touch-punch/archive/master.zip",
+          "type": "zip"
+        }
+      }
+    }
+  ],
+  "require": {
+    "php": "^7.4 || ^8.0",
+    "apigee/apigee_devportal_kickstart": "^2.1",
+    "composer/installers": "^1.9",
+    "drupal/advagg": "^5.0",
+    "drupal/apigee_m10n": "^2",
+    "drupal/commerce": "^2.21",
+    "drupal/commerce_cart_flyout": "^1.9",
+    "drupal/commerce_invoice": "^2.0@RC",
+    "drupal/commerce_sermepa": "^2.2",
+    "drupal/commerce_shipping": "^2.6",
+    "drupal/commerce_simple_stock": "^1.1",
+    "drupal/commerce_stock": "^1.1",
+    "drupal/core-composer-scaffold": "^9",
+    "drupal/core-project-message": "^9",
+    "drupal/core-recommended": "^9",
+    "drupal/google_analytics": "^3.1",
+    "drupal/image_delta_formatter": "^1.2",
+    "drupal/imageapi_optimize": "^4.0",
+    "drupal/imageapi_optimize_binaries": "^1.0@beta",
+    "drupal/imagemagick": "^3.4",
+    "drupal/jsonapi_extras": "^3.17",
+    "drupal/login_popup": "^2.1",
+    "drupal/mailchimp": "^2.2",
+    "drupal/masonry_views": "^4.0",
+    "drupal/metatag": "^2.0",
+    "drupal/robotstxt": "^1.5",
+    "drupal/search_api": "^1.29",
+    "drupal/sendinblue": "^2.0",
+    "drupal/smtp": "^1.0",
+    "drupal/taxonomy_menu": "^3.6",
+    "drupal/views_slideshow": "^5.0",
+    "drupal/webform": "^6.1",
+    "drupal/webp": "^1.0@beta",
+    "furf/jquery-ui-touch-punch": "dev-master",
+    "wikimedia/composer-merge-plugin": "^2.1"
+  },
+  "require-dev": {
+    "apigee/apigee-mock-client-php": "^1.1",
+    "drupal/core-dev": "^9",
+    "drush/drush": "^11"
+  },
+  "conflict": {
+    "drupal/drupal": "*",
+    "drupal/ctools": ">=4.0.1",
+    "drupal/pathauto": ">=1.11"
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "config": {
+    "sort-packages": true,
+    "process-timeout": 0,
+    "allow-plugins": {
+      "dealerdirect/phpcodesniffer-composer-installer": true,
+      "cweagans/composer-patches": true,
+      "composer/installers": true,
+      "drupal/core-composer-scaffold": true,
+      "drupal/core-project-message": true,
+      "php-http/discovery": true,
+      "wikimedia/composer-merge-plugin": true
+    }
+  },
+  "extra": {
+    "drupal-scaffold": {
+      "locations": {
+        "web-root": "web/"
+      },
+      "merge-plugin": {
+          "include": [
+              "modules/contrib/masonry/composer.libraries.json"
+          ]
+      }
+    },
+    "installer-paths": {
+      "web/core": ["type:drupal-core"],
+      "web/libraries/{$name}": ["type:drupal-library"],
+      "web/modules/contrib/{$name}": ["type:drupal-module"],
+      "web/profiles/contrib/{$name}": ["type:drupal-profile"],
+      "web/themes/contrib/{$name}": ["type:drupal-theme"],
+      "drush/Commands/contrib/{$name}": ["type:drupal-drush"],
+      "web/modules/custom/{$name}": ["type:drupal-custom-module"],
+      "web/themes/custom/{$name}": ["type:drupal-custom-theme"]
+    },
+    "drupal-core-project-message": {
+      "include-keys": ["homepage", "support"],
+      "post-create-project-cmd-message": [
+        "<bg=blue;fg=white>                                                                                 </>",
+        "<bg=blue;fg=white>  Congratulations, you’ve installed the Apigee Developer Portal Drupal codebase  </>",
+        "<bg=blue;fg=white>  from the apigee/devportal-kickstart-project template!                          </>",
+        "<bg=blue;fg=white>                                                                                 </>",
+        "",
+        "<bg=yellow;fg=black>Next steps</>:",
+        "  * Install the site: https://www.drupal.org/docs/8/modules/apigee-developer-portal-kickstart/get-started-with-kickstart",
+        "  * Read the guide: https://www.drupal.org/docs/8/modules/apigee-developer-portal-kickstart",
+        "  * Report issues : https://github.com/apigee/apigee-devportal-kickstart-drupal/issues"
+      ]
+    },
+    "enable-patching": true,
+    "patches": {
+      "drupal/core": {
+          "Support entities that are neither content nor config entities":"https://www.drupal.org/files/issues/2020-12-02/3042467-50.patch"
+      },
+      "drupal/commerce_stock": {
+          "3309574": "https://www.drupal.org/files/issues/2022-11-15/commerce-stock-single-store-3309574-6.patch"
+      },
+      "drupal/advagg": {
+          "ADVAGG PATCH": "https://www.drupal.org/files/issues/2022-12-13/3258389-57.patch"
+      },
+      "drupal/commerce_cart_flyout": {
+          "3075270-2": "https://www.drupal.org/files/issues/2020-04-30/consider-separate-count_text-into-two-values-3075270-2.patch",
+          "3167778-11": "https://www.drupal.org/files/issues/2021-04-01/cart-flyout-together-with-hal.patch",
+          "3144651-2": "https://www.drupal.org/files/issues/2020-09-27/add-quantity-field_3144651_2.patch",
+          "3056466-14": "https://www.drupal.org/files/issues/2020-07-07/always_open_cart_flyout-3056466-4.patch",
+          "3364476": "https://www.drupal.org/files/issues/2023-06-05/arg-mismatch-3364476-2.patch"
+      },
+      "drupal/jsonapi_extras":{
+          "JSON APIS EXTRAS BULK PATCH": "https://www.drupal.org/files/issues/2020-02-20/add-enable-disable-all-buttons--2896799--10.patch",
+          "Jsonapi_extra installation issue due to 3042467-50.patch": "https://github.com/apigee/apigee-devportal-kickstart-drupal/files/9189452/patch.569-1.txt"
+      },
+      "drupal/webp": {
+          "111": "https://www.drupal.org/files/issues/2022-07-14/3296075-fix-filesize-on-response.patch"
+      }
+    },
+    "patchLevel": {
+      "drupal/core": "-p2"
+    }
+  },
+  "scripts": {
+    "quick-start": [
+      "composer install",
+      "php web/core/scripts/drupal quick-start apigee_devportal_kickstart"
+    ]
+  }
+}

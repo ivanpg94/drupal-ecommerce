@@ -1,0 +1,12 @@
+uuid: f3e67e24-618f-476b-8f52-f8cb72787f4d
+langcode: es
+status: true
+dependencies:
+  module:
+    - node
+_core:
+  default_config_hash: z6QSG0XSjPK_V4notuY8MaeIAO_QnwfvuH825TyLiHg
+id: node.card
+label: Tarjeta
+targetEntityType: node
+cache: true

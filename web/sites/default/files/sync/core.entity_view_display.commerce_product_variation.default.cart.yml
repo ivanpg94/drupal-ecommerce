@@ -1,0 +1,57 @@
+uuid: 96b26979-3319-4a17-9aa7-1dc390a4bf35
+langcode: es
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.default
+    - core.entity_view_mode.commerce_product_variation.cart
+    - field.field.commerce_product_variation.default.field_categoria_producto
+    - field.field.commerce_product_variation.default.field_product_image
+    - responsive_image.styles.card_small
+  module:
+    - commerce_price
+    - responsive_image
+  enforced:
+    module:
+      - commerce_cart
+      - commerce_product
+_core:
+  default_config_hash: 6GpSQzJM6086KplhyiaTF3ezvQ_ecs8bIcW4GQMzrJU
+id: commerce_product_variation.default.cart
+targetEntityType: commerce_product_variation
+bundle: default
+mode: cart
+content:
+  field_product_image:
+    type: responsive_image
+    label: above
+    settings:
+      responsive_image_style: card_small
+      image_link: ''
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  price:
+    type: commerce_price_default
+    label: above
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  product_id:
+    type: entity_reference_label
+    label: hidden
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  apigee_price_range: true
+  field_categoria_producto: true
+  langcode: true
+  list_price: true
+  sku: true
+  title: true

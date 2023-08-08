@@ -1,0 +1,29 @@
+uuid: 1f26a4b0-0814-4380-9737-07a9d9a5d476
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.anuncio.field_imagen_anuncio
+    - field.field.node.anuncio.field_link_anuncio
+    - node.type.anuncio
+  module:
+    - user
+id: node.anuncio.teaser
+targetEntityType: node
+bundle: anuncio
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_imagen_anuncio: true
+  field_link_anuncio: true
+  langcode: true
+  search_api_excerpt: true

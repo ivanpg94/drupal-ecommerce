@@ -1,0 +1,31 @@
+uuid: 52e180db-79c6-4187-824a-d8814b545359
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.restricted_html
+  module:
+    - comment
+    - commerce_checkout
+    - commerce_product
+    - contact
+    - filter
+    - media
+    - search
+    - system
+_core:
+  default_config_hash: D9aK3qaiuH6ybhHQ-DFA1-_HfGvyahrKWNHE67snm8c
+id: anonymous
+label: 'Usuario anónimo'
+weight: 0
+is_admin: false
+permissions:
+  - 'access checkout'
+  - 'access comments'
+  - 'access content'
+  - 'access site-wide contact form'
+  - 'search content'
+  - 'use text format restricted_html'
+  - 'view commerce_product'
+  - 'view media'
+  - 'view published apidoc entities'

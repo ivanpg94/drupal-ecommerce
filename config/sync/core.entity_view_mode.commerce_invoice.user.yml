@@ -1,0 +1,12 @@
+uuid: 9d4c9a1e-1d83-42f9-8f6b-f0dc04237515
+langcode: es
+status: true
+dependencies:
+  module:
+    - commerce_invoice
+_core:
+  default_config_hash: 86O8VHtXaxfoH3Feg34UCGiu-EdNZ4Bnp0LbnRChXjc
+id: commerce_invoice.user
+label: Usuario
+targetEntityType: commerce_invoice
+cache: true

@@ -1,0 +1,12 @@
+uuid: dbdc60f1-ac7c-400d-86e5-900fe066d2c6
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: q7uorX1KJg8tf7PBrSSy45-t6FB9Cqw-gsjr7Yn1ueU
+id: default
+label: 'Por defecto'
+traits: {  }
+profileType: customer
+sendConfirmation: null
+confirmationBcc: null

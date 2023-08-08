@@ -1,0 +1,24 @@
+uuid: a0723f6e-89cc-46b1-9503-8b8259f878e0
+langcode: es
+status: false
+dependencies:
+  config:
+    - views.view.masonry_gallery
+  module:
+    - views
+  theme:
+    - subtheme
+id: views_block__masonry_gallery_block_1
+theme: subtheme
+region: header
+weight: -8
+provider: null
+plugin: 'views_block:masonry_gallery-block_1'
+settings:
+  id: 'views_block:masonry_gallery-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility: {  }

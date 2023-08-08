@@ -1,0 +1,24 @@
+uuid: dde04da0-1d81-4b4f-8616-1d502eed5640
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Spf0IN_X1PglO-RX9BTiPaolIjpdYJB7zjP5_GPu8Ic
+name: 7_4_730x417
+label: '7:4 Ratio - Max 730 x 417'
+effects:
+  c5964c54-f35f-4a4a-b3e3-3e1937f01217:
+    uuid: c5964c54-f35f-4a4a-b3e3-3e1937f01217
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 730
+      height: 417
+      anchor: center-center
+  1b242ad5-27c0-474a-9aa6-af0843f65a92:
+    uuid: 1b242ad5-27c0-474a-9aa6-af0843f65a92
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
+pipeline: webp

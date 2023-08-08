@@ -1,0 +1,29 @@
+uuid: a65f6b68-cf6e-4b6a-bcb3-005b013f4b39
+langcode: es
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.default
+    - field.storage.commerce_product_variation.field_categoria_producto
+    - taxonomy.vocabulary.categorias_producto
+id: commerce_product_variation.default.field_categoria_producto
+field_name: field_categoria_producto
+entity_type: commerce_product_variation
+bundle: default
+label: 'Categoría Producto'
+description: ''
+required: true
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:taxonomy_term'
+  handler_settings:
+    target_bundles:
+      categorias_producto: categorias_producto
+    sort:
+      field: name
+      direction: asc
+    auto_create: false
+    auto_create_bundle: ''
+field_type: entity_reference

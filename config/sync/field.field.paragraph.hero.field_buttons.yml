@@ -1,0 +1,32 @@
+uuid: f35f5cc2-9481-4fd9-89a4-8c6cdcd115fa
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.storage.paragraph.field_buttons
+    - paragraphs.paragraphs_type.button_group
+    - paragraphs.paragraphs_type.hero
+  module:
+    - entity_reference_revisions
+_core:
+  default_config_hash: axsQ2Fy07YFnMXPUPoDZo-7CLOwNHsMoCQPI5pdkBCM
+id: paragraph.hero.field_buttons
+field_name: field_buttons
+entity_type: paragraph
+bundle: hero
+label: Botones
+description: ''
+required: false
+translatable: false
+default_value: {  }
+default_value_callback: ''
+settings:
+  handler: 'default:paragraph'
+  handler_settings:
+    target_bundles:
+      button_group: button_group
+    negate: 0
+    target_bundles_drag_drop:
+      button_group:
+        enabled: true
+field_type: entity_reference_revisions

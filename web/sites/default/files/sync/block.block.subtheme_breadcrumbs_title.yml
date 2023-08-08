@@ -1,0 +1,27 @@
+uuid: b3fa7a6c-85cf-4709-a566-f1f18db966c6
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - subtheme
+_core:
+  default_config_hash: NfhJaYkah0ef19KcJZC_AOChMjQP-EBfsrOAM9UvWpc
+id: subtheme_breadcrumbs_title
+theme: subtheme
+region: breadcrumbs
+weight: 1
+provider: null
+plugin: page_title_block
+settings:
+  id: page_title_block
+  label: 'Breadcrumbs: Page title'
+  label_display: '0'
+  provider: core
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '<front>'

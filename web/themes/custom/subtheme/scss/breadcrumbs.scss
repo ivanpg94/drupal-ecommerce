@@ -1,0 +1,14 @@
+@import 'color';
+
+.page__breadcrumbs{
+  background-color: $color_fondo;
+  .breadcrumb{
+    background-color: $color_fondo;
+    li{
+      color: $color_secundario;
+      margin-left: 0.5rem;
+      display: flex;
+      align-items: center;
+    }
+  }
+}

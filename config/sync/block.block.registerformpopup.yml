@@ -1,0 +1,29 @@
+uuid: 6e714d31-2c4a-44ed-802b-4befe1c3f582
+langcode: es
+status: true
+dependencies:
+  module:
+    - login_popup
+    - user
+  theme:
+    - subtheme
+id: registerformpopup
+theme: subtheme
+region: navbar_right
+weight: -7
+provider: null
+plugin: register_form_popup
+settings:
+  id: register_form_popup
+  label: Registro
+  label_display: '0'
+  provider: login_popup
+  show_logout_link: 0
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      anonymous: anonymous

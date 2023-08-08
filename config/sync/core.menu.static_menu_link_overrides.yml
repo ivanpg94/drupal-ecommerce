@@ -1,0 +1,76 @@
+_core:
+  default_config_hash: o4bYR9ZupWb3AsOIizTUG4g-nu1mdJqA59UB7QT-ifQ
+langcode: es
+definitions:
+  contact__site_page:
+    menu_name: footer
+    parent: ''
+    weight: 0
+    expanded: false
+    enabled: true
+  apigee_m10n__pricing_and_plans:
+    menu_name: main
+    parent: ''
+    weight: 10
+    expanded: false
+    enabled: false
+  apigee_edge__apps:
+    menu_name: account
+    parent: ''
+    weight: -30
+    expanded: false
+    enabled: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__categorias_producto__2':
+    expanded: false
+    parent: 'admin:'
+    weight: 34
+    menu_name: main
+    enabled: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__categorias_producto__3':
+    expanded: false
+    parent: 'admin:'
+    weight: 35
+    menu_name: main
+    enabled: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__categorias_producto__4':
+    expanded: false
+    parent: 'admin:'
+    weight: 36
+    menu_name: main
+    enabled: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__categorias_producto__5':
+    expanded: false
+    parent: 'admin:'
+    weight: 37
+    menu_name: main
+    enabled: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__categorias_producto__6':
+    expanded: false
+    parent: 'admin:'
+    weight: 38
+    menu_name: main
+    enabled: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__categorias_producto__7':
+    expanded: false
+    parent: 'admin:'
+    weight: 39
+    menu_name: main
+    enabled: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__categorias_producto__8':
+    expanded: false
+    parent: 'admin:'
+    weight: 40
+    menu_name: main
+    enabled: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__categorias_producto__9':
+    expanded: false
+    parent: 'admin:'
+    weight: 41
+    menu_name: main
+    enabled: false
+  'taxonomy_menu__menu_link:taxonomy_menu__menu_link__categorias_producto__10':
+    expanded: false
+    parent: 'admin:'
+    weight: 42
+    menu_name: main
+    enabled: false

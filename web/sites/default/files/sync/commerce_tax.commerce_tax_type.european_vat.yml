@@ -1,0 +1,11 @@
+uuid: bc529781-7fbc-436c-bd69-1a7fd4d47aa5
+langcode: es
+status: true
+dependencies: {  }
+id: european_vat
+label: 'european vat'
+plugin: european_union_vat
+configuration:
+  display_inclusive: true
+conditions: {  }
+conditionOperator: AND

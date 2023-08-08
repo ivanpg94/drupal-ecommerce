@@ -1,0 +1,44 @@
+{#
+/**
+ * @file
+ * Default theme implementation to status_property_element.
+ *
+ * Available variables:
+ * - element: Element that will be rendered.
+ * - element['value'] : the status string.
+ *
+ * @ingroup themeable
+ */
+#}
+{% set statuses = {
+  approved: 'success',
+  active: 'success',
+  revoked: 'danger',
+  expired: 'warning',
+  pending: 'warning',
+} %}
+
+{% set type = statuses[element.value|trim|lower]|default('info') %}
+{% set content = element.value|capitalize %}
+
+{% set classes = [
+  'badge',
+  type ? 'badge-' ~ type,
+]|merge(utility_classes ? utility_classes : []) %}
+
+{% set html_tag = html_tag ?? 'span' %}
+
+{% if url %}
+  {% set html_tag = 'a' %}
+  {% set url = url|render %}
+{% endif %}
+
+{% if content %}
+  <{{ html_tag }} {{ url ? 'href=' ~ url }} class="{{ classes|join(' ') }}">
+
+  {% block content %}
+    {{ content }}
+  {% endblock %}
+
+  </{{ html_tag }}>
+{% endif %}

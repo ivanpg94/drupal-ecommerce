@@ -1,0 +1,33 @@
+uuid: 73ec35f8-b516-4a0f-87a2-aaeef7ea3baa
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.taxonomy_term.categorias_producto.field_categoria_imagen
+    - image.style.13_4_1300x400
+    - taxonomy.vocabulary.categorias_producto
+  module:
+    - image
+id: taxonomy_term.categorias_producto.default
+targetEntityType: taxonomy_term
+bundle: categorias_producto
+mode: default
+content:
+  field_categoria_imagen:
+    type: image
+    label: hidden
+    settings:
+      image_link: ''
+      image_style: 13_4_1300x400
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+hidden:
+  description: true
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  langcode: true
+  search_api_excerpt: true

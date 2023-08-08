@@ -1,0 +1,19 @@
+uuid: 3edf57f0-8f8b-4a0b-aac3-9ab3df02798c
+langcode: es
+status: true
+dependencies: {  }
+id: test
+label: Test
+weight: null
+plugin: manual
+configuration:
+  display_label: Test
+  mode: n/a
+  payment_method_types:
+    - credit_card
+  collect_billing_information: true
+  instructions:
+    value: 'esto es una pasarela de test'
+    format: plain_text
+conditions: {  }
+conditionOperator: AND

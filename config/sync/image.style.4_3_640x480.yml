@@ -1,0 +1,24 @@
+uuid: ecb51a6d-c642-4f2b-80f9-688c733be1e1
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Mw4HaaP6y4vO5WJCvHsmLesZs34xScoyLsSEzic2LxU
+name: 4_3_640x480
+label: '4:3 Ratio - Max 640 x 480'
+effects:
+  ae590901-8807-45de-922d-db11094a09c4:
+    uuid: ae590901-8807-45de-922d-db11094a09c4
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 640
+      height: 480
+      anchor: center-center
+  154896ea-77fd-4ef1-9181-948398344dda:
+    uuid: 154896ea-77fd-4ef1-9181-948398344dda
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
+pipeline: webp

@@ -1,0 +1,28 @@
+# Spanish translation of File Link (2.1.0)
+# Copyright (c) 2023 by the Spanish translation team
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: File Link (2.1.0)\n"
+"POT-Creation-Date: 2023-03-28 12:46+0000\n"
+"PO-Revision-Date: YYYY-mm-DD HH:MM+ZZZZ\n"
+"Language-Team: Spanish\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n!=1);\n"
+
+msgid "Size"
+msgstr "Tamaño"
+msgid "Format"
+msgstr "Formato"
+msgid "Allowed file extensions"
+msgstr "Extensiones de archivos permitidos"
+msgid "Default value"
+msgstr "Valor predeterminado"
+msgid "Allowed extensions: %ext."
+msgstr "Extensiones permitidas: %ext."
+msgid "About"
+msgstr "Acerca de"
+msgid "Field types"
+msgstr "Tipos de campo"

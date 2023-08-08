@@ -1,0 +1,25 @@
+uuid: 6a351d10-6880-41c3-8f48-8ae9e5c2588b
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - subtheme
+_core:
+  default_config_hash: TPGaK2lHnw3pM4AXSliTil-MxPlSsfmVka40dgIxQdg
+id: subtheme_branding
+theme: subtheme
+region: navbar_branding
+weight: -9
+provider: null
+plugin: system_branding_block
+settings:
+  id: system_branding_block
+  label: 'Marca del sitio'
+  label_display: '0'
+  provider: system
+  use_site_logo: true
+  use_site_name: false
+  use_site_slogan: false
+visibility: {  }

@@ -1,0 +1,11 @@
+uuid: 726b3e27-75c6-4fdf-99d5-5aa1724f035d
+langcode: es
+status: true
+dependencies:
+  config:
+    - node.type.anuncio
+id: node.anuncio
+target_entity_type_id: node
+target_bundle: anuncio
+default_langcode: site_default
+language_alterable: false

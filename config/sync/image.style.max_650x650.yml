@@ -1,0 +1,27 @@
+uuid: db0fdc2d-0d10-46a8-99a9-fcb8b5af2547
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - responsive_image
+_core:
+  default_config_hash: MIWUEhKenWK-3vEZNN_FJwpmqggIZtfJ9LOLYryTqHI
+name: max_650x650
+label: 'Máximo 650x650'
+effects:
+  949c201a-77f5-48f6-ba00-be91eb1aad47:
+    uuid: 949c201a-77f5-48f6-ba00-be91eb1aad47
+    id: image_scale
+    weight: 1
+    data:
+      width: 650
+      height: 650
+      upscale: false
+  82c19bec-9eeb-462e-9270-c572d0c4f873:
+    uuid: 82c19bec-9eeb-462e-9270-c572d0c4f873
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
+pipeline: webp

@@ -1,0 +1,24 @@
+uuid: e5157e9b-ce1d-4bd4-b4a7-2d80a9c6c9f6
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: AqAciiYhbaUR8q8xij3lWUyA1a0dJ4s1mCJnZB4yTSk
+name: 7_4_640x366
+label: '7:4 Ratio - Max 640 x 366'
+effects:
+  48526482-ce86-4e31-84af-480806b7024c:
+    uuid: 48526482-ce86-4e31-84af-480806b7024c
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 640
+      height: 366
+      anchor: center-center
+  aac413a5-3d50-4614-886d-f970ea3ab4fd:
+    uuid: aac413a5-3d50-4614-886d-f970ea3ab4fd
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
+pipeline: webp

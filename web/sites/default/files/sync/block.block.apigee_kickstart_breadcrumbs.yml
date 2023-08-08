@@ -1,0 +1,27 @@
+uuid: 55eb5819-0a10-4a27-86a1-17166c56100b
+langcode: es
+status: true
+dependencies:
+  module:
+    - system
+  theme:
+    - apigee_kickstart
+_core:
+  default_config_hash: Q4F0HKnwTkYwRtNTZtnl87LwCzaWruT9CCISd9pNGCc
+id: apigee_kickstart_breadcrumbs
+theme: apigee_kickstart
+region: breadcrumbs
+weight: 0
+provider: null
+plugin: system_breadcrumb_block
+settings:
+  id: system_breadcrumb_block
+  label: 'Enlaces de ayuda a la navegación'
+  label_display: '0'
+  provider: system
+visibility:
+  request_path:
+    id: request_path
+    negate: true
+    context_mapping: {  }
+    pages: '/article/*\r\n/blog/*'

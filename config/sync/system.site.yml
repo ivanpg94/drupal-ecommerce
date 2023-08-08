@@ -1,0 +1,14 @@
+_core:
+  default_config_hash: yTxtFqBHnEWxQswuWvkjE8mKw2t8oKuCL1q8KnfHuGE
+langcode: es
+uuid: 46b9b2bb-0573-43a4-9cf4-989ef9253bd3
+name: kickstarter
+mail: ivand.2222@gmail.com
+slogan: 'Un proyecto de test para ecommerce'
+page:
+  403: ''
+  404: ''
+  front: /node/7
+admin_compact_mode: false
+weight_select_max: 100
+default_langcode: es

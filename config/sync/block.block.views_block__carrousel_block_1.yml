@@ -1,0 +1,29 @@
+uuid: 69a29439-e552-45d8-843a-4c5ea65aa76f
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.carrousel
+  module:
+    - system
+    - views
+  theme:
+    - subtheme
+id: views_block__carrousel_block_1
+theme: subtheme
+region: header
+weight: -9
+provider: null
+plugin: 'views_block:carrousel-block_1'
+settings:
+  id: 'views_block:carrousel-block_1'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: '<front>'

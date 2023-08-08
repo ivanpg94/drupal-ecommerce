@@ -1,0 +1,12 @@
+uuid: 72043b9c-e5b1-4525-b26f-1def15371d19
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: 433hUbeFheIYJ30JP4SWPFuhOiD4tUBEE-tipv2IfUI
+id: media.card
+label: Tarjeta
+targetEntityType: media
+cache: true

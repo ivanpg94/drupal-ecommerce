@@ -1,0 +1,16 @@
+uuid: 9cee8726-112e-4a42-a562-22db5f60a541
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.categorias
+    - taxonomy.vocabulary.categorias_producto
+id: categorias_producto
+label: 'Categorias producto'
+vocabulary: categorias_producto
+menu: categorias
+expanded: false
+depth: 0
+menu_parent: 'admin:'
+description_field_name: ''
+use_term_weight_order: true

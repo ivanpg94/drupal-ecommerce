@@ -1,0 +1,36 @@
+uuid: 068eb16b-d55b-42ee-b3c6-0a686b5c68c5
+langcode: es
+status: true
+dependencies:
+  config:
+    - system.menu.account
+  module:
+    - system
+    - user
+  theme:
+    - subtheme
+_core:
+  default_config_hash: e5o-OgvsySwm3H6ZKpYqCoxvfkhvnNsRYIX7pk1gVzc
+id: subtheme_menu_account
+theme: subtheme
+region: navbar_right
+weight: -9
+provider: null
+plugin: 'system_menu_block:account'
+settings:
+  id: 'system_menu_block:account'
+  label: 'Menú de cuenta de usuario'
+  label_display: visible
+  provider: system
+  level: 1
+  depth: 0
+  expand_all_items: false
+visibility:
+  user_role:
+    id: user_role
+    negate: false
+    context_mapping:
+      user: '@user.current_user_context:current_user'
+    roles:
+      authenticated: authenticated
+      administrator: administrator

@@ -1,0 +1,10 @@
+uuid: 8e220d40-e8df-4f00-824e-cc618b705b07
+langcode: es
+status: true
+dependencies: {  }
+id: commerce_product
+label: Producto
+tags:
+  abstract: '[commerce_product:body]'
+  description: '[commerce_product:body]'
+  title: '[commerce_product:title]'

@@ -1,0 +1,37 @@
+uuid: 5b9d320e-3770-453e-b26c-74dc2d39493d
+langcode: es
+status: true
+dependencies:
+  config:
+    - filter.format.basic_html
+  module:
+    - comment
+    - commerce_checkout
+    - commerce_order
+    - commerce_payment
+    - commerce_product
+    - contact
+    - filter
+    - media
+    - shortcut
+    - system
+_core:
+  default_config_hash: Ad14g-dfF-BfUNsmedzmYK3aNp-fL2DRyFGIIOhnA2w
+id: authenticated
+label: 'Usuario autenticado'
+weight: 1
+is_admin: false
+permissions:
+  - 'access checkout'
+  - 'access comments'
+  - 'access content'
+  - 'access shortcuts'
+  - 'access site-wide contact form'
+  - 'manage own commerce_payment_method'
+  - 'post comments'
+  - 'skip comment approval'
+  - 'use text format basic_html'
+  - 'view commerce_product'
+  - 'view media'
+  - 'view own commerce_order'
+  - 'view published apidoc entities'

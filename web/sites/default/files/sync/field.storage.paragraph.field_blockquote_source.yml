@@ -1,0 +1,23 @@
+uuid: 5f4a6325-3e27-4cb9-bcdd-5bf9efd63372
+langcode: es
+status: true
+dependencies:
+  module:
+    - paragraphs
+_core:
+  default_config_hash: ZsREKYSvDFyU2-ZJLgeBG0ZHCpKoj5IKku74HY6h_Jo
+id: paragraph.field_blockquote_source
+field_name: field_blockquote_source
+entity_type: paragraph
+type: string
+settings:
+  max_length: 255
+  case_sensitive: false
+  is_ascii: false
+module: core
+locked: false
+cardinality: 1
+translatable: true
+indexes: {  }
+persist_with_no_fields: false
+custom_storage: false

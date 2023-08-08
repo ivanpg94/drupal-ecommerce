@@ -1,0 +1,24 @@
+@import "color";
+
+.page__footer{
+  background-color: $color_fondo;
+  .block--logoipg{
+    p{
+      display: none;
+    }
+    img{
+      width: 70px;
+    }
+  }
+  .container {
+    max-width: 100%;
+  }
+  .footer{
+    padding-top: $margin !important;
+    padding-bottom: $margin !important;
+  }
+  .justify-content-md-between{
+    display: flex;
+    justify-content: space-between;
+  }
+}

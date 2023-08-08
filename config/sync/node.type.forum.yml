@@ -1,0 +1,16 @@
+uuid: 8c0c180a-7d05-4b3e-8608-97d98c7693ad
+langcode: es
+status: true
+dependencies:
+  enforced:
+    module:
+      - forum
+_core:
+  default_config_hash: ERCHDVB33lub-cz7DSYR7HuBlYJjmVUdPw0IIYa3ZXc
+name: 'Tema del foro'
+type: forum
+description: 'Un<em>tema del foro</em> inicia un nuevo hilo de discusión dentro de un foro.'
+help: ''
+new_revision: false
+preview_mode: 1
+display_submitted: true

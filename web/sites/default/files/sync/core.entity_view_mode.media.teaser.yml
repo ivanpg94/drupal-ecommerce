@@ -1,0 +1,12 @@
+uuid: 177bf08b-f147-45d7-b63f-d7b551aa3385
+langcode: es
+status: true
+dependencies:
+  module:
+    - media
+_core:
+  default_config_hash: dNqYlYCeQz-Tqg-30xGLais5kPzkB00ky3JZjqWmZkE
+id: media.teaser
+label: Resumen
+targetEntityType: media
+cache: true

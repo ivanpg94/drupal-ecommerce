@@ -1,0 +1,12 @@
+uuid: df8a7493-271a-4d5c-b7f3-be948e80db3b
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: dbUqgRtIt_ItZUA1Aie_mqutfTC8K7ByPqE7Y42oxiU
+id: card
+label: Tarjeta
+icon_uuid: null
+icon_default: null
+description: 'A <em>Card</em> contains image, title, summary and link.'
+behavior_plugins: {  }

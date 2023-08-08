@@ -1,0 +1,21 @@
+uuid: f545a846-16c9-4145-8b73-48896636530d
+langcode: es
+status: true
+dependencies:
+  module:
+    - menu_ui
+third_party_settings:
+  menu_ui:
+    available_menus:
+      - footer
+      - main
+    parent: 'main:'
+_core:
+  default_config_hash: FLnYNEOFyPHOO79AfbXqzGMZqlENS8dZ8-vDJW9e-Lk
+name: 'Página básica'
+type: page
+description: 'Utilice <em>páginas básicas</em> para el contenido estático, por ejemplo la página ''Sobre nosotros''.'
+help: ''
+new_revision: true
+preview_mode: 1
+display_submitted: false

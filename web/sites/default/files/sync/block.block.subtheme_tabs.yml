@@ -1,0 +1,22 @@
+uuid: ba95b7c1-2857-4b49-9de6-41b2f6359e93
+langcode: es
+status: true
+dependencies:
+  theme:
+    - subtheme
+_core:
+  default_config_hash: axlgVStpEIt5eiZDldRFgur-7puYccXDfimn4rXh8gA
+id: subtheme_tabs
+theme: subtheme
+region: tasks
+weight: 0
+provider: null
+plugin: local_tasks_block
+settings:
+  id: local_tasks_block
+  label: Pestañas
+  label_display: '0'
+  provider: core
+  primary: true
+  secondary: true
+visibility: {  }

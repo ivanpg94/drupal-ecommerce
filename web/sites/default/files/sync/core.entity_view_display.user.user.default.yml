@@ -1,0 +1,68 @@
+uuid: 1f45b5a6-cbf1-4599-93ef-2da66cebff47
+langcode: es
+status: true
+dependencies:
+  config:
+    - field.field.user.user.commerce_remote_id
+    - field.field.user.user.user_picture
+    - image.style.1_1_80x80
+  module:
+    - image
+    - user
+_core:
+  default_config_hash: 2PPZpiAkDybC7S98lR35v0eSQgWuqfyojQTZS8OGsHM
+id: user.user.default
+targetEntityType: user
+bundle: user
+mode: default
+content:
+  billingtype:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 7
+    region: content
+  display_name:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 1
+    region: content
+  email:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  member_for:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 4
+    region: content
+  roles:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 5
+    region: content
+  timezone:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 6
+    region: content
+  user_picture:
+    type: image
+    label: hidden
+    settings:
+      image_link: content
+      image_style: 1_1_80x80
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 0
+    region: content
+  username:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 2
+    region: content
+hidden:
+  commerce_remote_id: true
+  customer_profiles: true
+  langcode: true

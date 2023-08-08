@@ -1,0 +1,12 @@
+uuid: 50ff92d3-fc9a-41d5-8c3f-77cc21e2fef1
+langcode: es
+status: true
+dependencies:
+  module:
+    - commerce_shipping
+_core:
+  default_config_hash: G40vv9Xuc6Jt1V5H0UcORDW-EUbERkckHwBYkH7mG_Y
+id: commerce_shipment.user
+label: Usuario
+targetEntityType: commerce_shipment
+cache: true

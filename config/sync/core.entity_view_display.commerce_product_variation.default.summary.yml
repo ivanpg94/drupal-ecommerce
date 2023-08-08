@@ -1,0 +1,74 @@
+uuid: 587b72bd-b8e9-4695-820d-1260f08cb284
+langcode: es
+status: true
+dependencies:
+  config:
+    - commerce_product.commerce_product_variation_type.default
+    - core.entity_view_mode.commerce_product_variation.summary
+    - field.field.commerce_product_variation.default.field_categoria_producto
+    - field.field.commerce_product_variation.default.field_dimensiones
+    - field.field.commerce_product_variation.default.field_peso
+    - field.field.commerce_product_variation.default.field_product_image
+    - field.field.commerce_product_variation.default.field_product_image_extra
+    - field.field.commerce_product_variation.default.field_stock
+  module:
+    - commerce_order
+    - image
+  enforced:
+    module:
+      - commerce_checkout
+_core:
+  default_config_hash: jmDRQILFIWJUS3jS-qLF10aGc1IXnvFEBizwJl94FfU
+id: commerce_product_variation.default.summary
+targetEntityType: commerce_product_variation
+bundle: default
+mode: summary
+content:
+  field_product_image:
+    type: image
+    label: above
+    settings:
+      image_link: ''
+      image_style: ''
+      image_loading:
+        attribute: lazy
+    third_party_settings: {  }
+    weight: 2
+    region: content
+  price:
+    type: commerce_price_calculated
+    label: above
+    settings:
+      strip_trailing_zeroes: false
+      currency_display: symbol
+      adjustment_types:
+        fee: fee
+        promotion: promotion
+        tax: tax
+        shipping: shipping
+        shipping_promotion: shipping_promotion
+    third_party_settings: {  }
+    weight: 3
+    region: content
+  product_id:
+    type: entity_reference_label
+    label: above
+    settings:
+      link: true
+    third_party_settings: {  }
+    weight: 4
+    region: content
+hidden:
+  entity_print_view_epub: true
+  entity_print_view_pdf: true
+  entity_print_view_word_docx: true
+  field_categoria_producto: true
+  field_dimensiones: true
+  field_peso: true
+  field_product_image_extra: true
+  field_stock: true
+  langcode: true
+  list_price: true
+  search_api_excerpt: true
+  sku: true
+  title: true

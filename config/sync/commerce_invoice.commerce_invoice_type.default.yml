@@ -1,0 +1,17 @@
+uuid: 4e255cab-f6f6-425b-9ffa-24c1c3de3390
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: ccmJnYDefjjUJ1_S8QUpDMgN41yZcLULtiTOdR1sJmo
+id: default
+label: Factura
+traits: {  }
+numberPattern: invoice_default
+logo: null
+dueDays: null
+paymentTerms: ''
+footerText: ''
+workflow: invoice_default
+sendConfirmation: false
+confirmationBcc: ''

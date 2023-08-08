@@ -1,0 +1,16 @@
+uuid: 65790086-8a08-40ee-a304-e3b306b0ae2d
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: z1NlERHkCLoqgbvpXBQDUVHM-Go5aU8xuSzpfBlV77c
+name: original
+label: Original
+effects:
+  dd9e2df6-0e11-467f-a536-68aef1ae5aed:
+    uuid: dd9e2df6-0e11-467f-a536-68aef1ae5aed
+    id: image_convert
+    weight: 1
+    data:
+      extension: webp
+pipeline: webp

@@ -1,0 +1,29 @@
+uuid: b5ad9d1c-5fd9-46f2-b77c-8925c857fe17
+langcode: es
+status: true
+dependencies:
+  config:
+    - views.view.productos_front
+  module:
+    - system
+    - views
+  theme:
+    - subtheme
+id: views_block__productos_front_block_5
+theme: subtheme
+region: content
+weight: 0
+provider: null
+plugin: 'views_block:productos_front-block_5'
+settings:
+  id: 'views_block:productos_front-block_5'
+  label: ''
+  label_display: '0'
+  provider: views
+  views_label: ''
+  items_per_page: none
+visibility:
+  request_path:
+    id: request_path
+    negate: false
+    pages: /tipo-pantalla

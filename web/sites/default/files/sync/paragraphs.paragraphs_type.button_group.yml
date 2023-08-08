@@ -1,0 +1,12 @@
+uuid: 9fedd1cb-3fd7-4549-8153-ed2e42cdc12a
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: Jq5ow146P28TGqdHwyhNYfUGle96F34XGBqbUkq-Ej0
+id: button_group
+label: 'Grupo de botones'
+icon_uuid: null
+icon_default: null
+description: 'A <em>Button group</em> contains one or more <em>Button link</em> items.'
+behavior_plugins: {  }

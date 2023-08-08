@@ -1,0 +1,62 @@
+@import 'color';
+
+.page__header{
+  background-color: $color_fondo;
+}
+.navbar{
+  .container{
+    align-items: normal;
+    max-width: 100%;
+  }
+  background-color: $color_secundario;
+  z-index: 10;
+  .nav-link{
+    color: $color_primario;
+  }
+  .nav-item.active::after{
+    background-color: $color_primario;
+  }
+}
+.Login-popup-link{
+  a{
+    color: $color_primario;
+  }
+}
+.Register-popup-link{
+  a{
+    color: $color_primario;
+  }
+}
+.cart-block--link__expand{
+  color: $color_primario;
+}
+.navbar-toggler{
+  color: $color_primario;
+}
+.block--loginformpopup{
+  margin-right: $margin;
+}
+.navbar-brand img {
+  max-height: 40px;
+}
+.cart--cart-block{
+  margin-left: $margin;
+  img{
+    content: url("/themes/custom/subtheme/cart.png");
+    max-height: 20px;
+  }
+}
+@media (max-width: 600px) {
+  .block--formularioexpuestoproductos-search-apipage-1 {
+    width: 41%;
+  }
+  .navbar-brand img {
+    max-height: 30px;
+    margin-bottom: 1rem;
+  }
+  .navbar {
+    .container {
+      align-items: center;
+    }
+  }
+}

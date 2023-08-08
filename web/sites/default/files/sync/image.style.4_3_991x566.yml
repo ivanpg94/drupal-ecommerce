@@ -1,0 +1,24 @@
+uuid: 6c4c3a40-0a34-4bc6-9a7a-61a5a556cbed
+langcode: es
+status: true
+dependencies: {  }
+_core:
+  default_config_hash: nQmW_ilRa7PMdDi3CdAptY4PKucAP6X7bpnZ0xFdI0I
+name: 4_3_991x566
+label: '4:3 Ratio - Max 991 x 566'
+effects:
+  ad8ec3e0-599a-4ec7-b2b5-0e8a7533fdbb:
+    uuid: ad8ec3e0-599a-4ec7-b2b5-0e8a7533fdbb
+    id: image_scale_and_crop
+    weight: 1
+    data:
+      width: 991
+      height: 566
+      anchor: center-center
+  06da9516-c707-4288-ad4e-64228656d2bd:
+    uuid: 06da9516-c707-4288-ad4e-64228656d2bd
+    id: image_convert
+    weight: 2
+    data:
+      extension: webp
+pipeline: webp

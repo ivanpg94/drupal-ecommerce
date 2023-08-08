@@ -1,0 +1,23 @@
+uuid: 6a92a860-989e-443f-8501-85fecd5caf1a
+langcode: es
+status: true
+dependencies:
+  config:
+    - core.entity_view_mode.node.teaser
+    - field.field.node.slider.field_carousel_image
+    - node.type.slider
+  module:
+    - user
+id: node.slider.teaser
+targetEntityType: node
+bundle: slider
+mode: teaser
+content:
+  links:
+    settings: {  }
+    third_party_settings: {  }
+    weight: 100
+    region: content
+hidden:
+  field_carousel_image: true
+  langcode: true
