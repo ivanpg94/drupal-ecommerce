@@ -1,2 +1,0 @@
-For list of release changes, visit:
-https://www.drupal.org/project/apigee_edge/releases
